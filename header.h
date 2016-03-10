@@ -15,3 +15,4 @@ using namespace std;
 #include "commands.h"
 #include "classes/appbase.h"
 #include "classes/launcher.h"
+#include "classes/browser.h"

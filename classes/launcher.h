@@ -98,18 +98,7 @@ public:
 
 			Sleep(100);
 
-			Write(Account.password);
-
-			if (LName == "origin")
-			{
-				keybd_event(VK_LSHIFT, 0, KEYEVENTF_EXTENDEDKEY, 0);
-				keybd_event('W', 0, KEYEVENTF_EXTENDEDKEY, 0);
-				keybd_event('W', 0, KEYEVENTF_KEYUP, 0);
-				keybd_event(VK_LSHIFT, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
-			}
-
-			keybd_event('\r', 0,0,0);
-			keybd_event('\r', 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
+			Enter(Account.password);
 
 			Sleep(2000);
 		}
